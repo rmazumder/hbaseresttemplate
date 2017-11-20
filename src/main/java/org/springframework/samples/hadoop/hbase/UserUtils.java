@@ -47,8 +47,8 @@ public class UserUtils implements InitializingBean {
 			admin.deleteTable(tableNameAsBytes);
 		}*/
 
-		UserGroupInformation.setConfiguration(hbaseTemplate.getConfiguration());
-		UserGroupInformation ugf = UserGroupInformation.loginUserFromKeytabAndReturnUGI("ruhul", "dsdsds");
+		//UserGroupInformation.setConfiguration(hbaseTemplate.getConfiguration());
+		//UserGroupInformation ugf = UserGroupInformation.loginUserFromKeytabAndReturnUGI("ruhul", "dsdsds");
 		HTableDescriptor tableDescriptor = new HTableDescriptor(tableName);
 		HColumnDescriptor columnDescriptor = new HColumnDescriptor(
 				UserRepository.CF_INFO);
